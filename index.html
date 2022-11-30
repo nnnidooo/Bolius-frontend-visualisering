@@ -6,13 +6,44 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-<h1>Har du råd til bolig</h1>
-//hvor mange penge har du til rådighed
-//hvor meget tjener du om måneden (efter skat)
-//hvor mange m^2 ønsker du at bo i?
-//Har du børn?
-//Har du bil?
-// hvor er dit/jeres arbejde geografisk pt?
+
+<div class="quiz-container" id="quiz" >
+    <div class="quiz-header">
+
+<h1> Hvor mange kvadratmeter har du råd til? </h1>
+
+<p> Hvor mange penge har du til rådighed? </p>
+
+<input type="text" placeholder="$$$" id="answer1">
+<button class="nextButton" onclick="next(1)"> Next </button>
+
+
+<p>Hvad er din indkomst på efter skat?</p>
+<input type="text" placeholder="$$$" id="answer2">
+<button class="nextButton2" onclick="next(2)"> Next </button>
+
+<p>Hvor mange kvadratmeter vil du gerne bo i?</p>
+<input type="text" placeholder="50m2" id="answer3">
+<button class="nextButton3" onclick="next(3)"> Next </button>
+
+<p>Hvor mange børn har du?</p>
+<input type="text" placeholder="Eksempel: 4" id="answer4">
+<button class="nextButton4" onclick="next(4)"> Next </button>
+
+<p> Har du bil hvis ja, hvor mange?</p>
+<input type="text" placeholder="1" id="answer5">
+<button class="nextButton5" onclick="next(5)"> Next </button>
+
+<p>I hvilken by arbejder du?</p>
+<input type="text" placeholder="Skriv en by" id="answer6">
+<button class="nextButton6" onclick="next(6)"> Next </button>
+
+
+</div>
+<button ><input type="submit" name="questions" value="Submit Quiz" class="submit-button" id="submit-btn"> </button>
+
+</div>
+
 
 </body>
 
