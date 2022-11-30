@@ -1,49 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="main.css">
 </head>
+<header>
+
+    <h1> Hvor mange kvadratmeter har du råd til? </h1>
+
+</header>
 <body>
 
 <div class="quiz-container" id="quiz" >
     <div class="quiz-header">
 
-<h1> Hvor mange kvadratmeter har du råd til? </h1>
-
-<p> Hvor mange penge har du til rådighed? </p>
-
+        <ul>
+<p>Hvor mange penge har du til rådighed?</p>
 <input type="text" placeholder="$$$" id="answer1">
-<button class="nextButton" onclick="next(1)"> Next </button>
+        </ul>
 
-
+        <ul>
 <p>Hvad er din indkomst på efter skat?</p>
 <input type="text" placeholder="$$$" id="answer2">
-<button class="nextButton2" onclick="next(2)"> Next </button>
 
+         </ul>
+
+        <ul>
 <p>Hvor mange kvadratmeter vil du gerne bo i?</p>
 <input type="text" placeholder="50m2" id="answer3">
-<button class="nextButton3" onclick="next(3)"> Next </button>
+        </ul>
 
+        <ul>
 <p>Hvor mange børn har du?</p>
 <input type="text" placeholder="Eksempel: 4" id="answer4">
-<button class="nextButton4" onclick="next(4)"> Next </button>
-
+        </ul>
+        <ul>
 <p> Har du bil hvis ja, hvor mange?</p>
 <input type="text" placeholder="1" id="answer5">
-<button class="nextButton5" onclick="next(5)"> Next </button>
-
+        </ul>
+        <ul>
 <p>I hvilken by arbejder du?</p>
 <input type="text" placeholder="Skriv en by" id="answer6">
-<button class="nextButton6" onclick="next(6)"> Next </button>
-
+        </ul>
 
 </div>
 <button ><input type="submit" name="questions" value="Submit Quiz" class="submit-button" id="submit-btn"> </button>
 
 </div>
 
+<div class="submit-box" id="result">
+<div id="output"></div>
+</div>
 
 </body>
 
