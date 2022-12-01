@@ -8,11 +8,18 @@
 
 }
  header{
-   display: flex;
-   justify-content: center;
-     text-align: center;
+
  }
- 
+ h1{
+     position: fixed;
+     top: 0;
+     width: 1000px;
+     flex-direction: row-reverse;
+     display: flex;
+     align-items: center;
+
+ }
+
 p {
     font-size: 1.2rem;
     margin: 1rem 0;
@@ -43,17 +50,17 @@ body {
     align-items: center;
     height: 100vh;
 }
-.submit-box{
-    display: none;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    border: 15px solid;
-    padding: 4rem;
-    margin: 20px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 20px black;
-}
+
+
+
+
+
+
+
+
+
+
+
 button {
     background: #CFE3E3;
     color:white;
