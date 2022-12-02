@@ -2,17 +2,19 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-<header>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <h1> Hvor mange kvadratmeter har du råd til? </h1>
+    <title>Title</title>
+    <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<header id="backgroundImage">
 
 </header>
+<h1> Beregn hvor ? </h1>
 <body>
-
-<div class="quiz-container" id="quiz" >
+<div class="quiz-container" id="quiz">
     <div class="quiz-header">
 
         <ul>
@@ -21,9 +23,8 @@
         </ul>
 
         <ul>
-<p>Hvad er din indkomst på efter skat?</p>
+<p>Hvad er din månedelig indkomst efter skat?</p>
 <input type="text" placeholder="$$$" id="answer2">
-
          </ul>
 
         <ul>
@@ -35,26 +36,26 @@
 <p>Hvor mange børn har du?</p>
 <input type="text" placeholder="Eksempel: 4" id="answer4">
         </ul>
+
         <ul>
 <p> Har du bil hvis ja, hvor mange?</p>
 <input type="text" placeholder="1" id="answer5">
         </ul>
+
         <ul>
 <p>I hvilken by arbejder du?</p>
 <input type="text" placeholder="Skriv en by" id="answer6">
         </ul>
 
-</div>
-<button ><input type="submit" name="questions" value="Submit Quiz" class="submit-button" id="submit-btn"> </button>
+
+    <button id="submit-btn"> Submit </button>
+    </div>
 
 </div>
 
-<div class="submit-box" id="result">
-<div id="output"></div>
-</div>
+<div id='map'></div>
 
 </body>
 
-<script src="main.js"></script>
-
+<script src="map.js"></script>
 </html>
