@@ -1,3 +1,13 @@
+
+body {
+    max-width: 800px;
+    margin: 36px auto;
+    padding: 15px;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-family: Arial;
+}
+
 .header img{
     position: relative;
     float: left;
@@ -10,18 +20,26 @@
     text-align: auto;
     font-family: Arial;
     color: #EE5C47;
+    background: block;
 }
 
 .header {
    margin-bottom: 100px;
+}
 
+h1 {
+    text-align: center;
+    background---color: #CFE3E3;
+}
 
-
+h3 {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 
 .quiz-container {
-    background-color: #DDEBEB;
+    background-color: ;
     box-shadow: 0 0px 20px black; border: 1px solid;
     margin: auto;
     width: 600px;
@@ -38,11 +56,10 @@ p {
 }
 
 #submit-btn {
-    background-color: #CFE3E3;
     color: white;
     width: 100%;
     font-size: medium;
     padding: 10px;
     margin-top: 20px;
-    border-radius: 10px;
+
 }
