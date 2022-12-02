@@ -1,13 +1,21 @@
 
 //attach eventlistener
-const submitButton = document.querySelector('button.submit-btn')
-console.log(submitButton);
+const submitButton = document.querySelector('#submit-btn');
 
-document.addEventListener('click', function () {
-
-//Get input values
-const answerOne = document.querySelector('input')
-console.log(answerOne.value)
+submitButton.addEventListener('click', function () {
+    //Get input values
+    const answerOne = document.querySelector('#answer1');
+    const answerTwo = document.querySelector('#answer2');
+    const answerThree = document.querySelector('#answer3');
+    const answerFour = document.querySelector('#answer4');
+    const answerFive = document.querySelector('#answer5');
+    const answerSix = document.querySelector('#answer6');
+    console.log(answerOne.value);
+    console.log(answerTwo.value);
+    console.log(answerThree.value);
+    console.log(answerFour.value);
+    console.log(answerFive.value);
+    console.log(answerSix.value);
 })
 
 /*
