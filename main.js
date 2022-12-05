@@ -16,7 +16,10 @@ submitButton.addEventListener('click', function () {
     console.log(answerFour.value);
     console.log(answerFive.value);
     console.log(answerSix.value);
-})
+});
+
+/*
+
 
 
 const map = L.map('map').setView([56, 11.6], 6);
