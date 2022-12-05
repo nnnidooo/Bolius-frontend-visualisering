@@ -1,5 +1,14 @@
+//JSON.parse laver json til arrays af objekter
+JSON.parse(fritidshuse)
+console.log(JSON.parse (fritidshuse));
 
-//attach eventlistener
+JSON.parse(ejerlejligheder)
+console.log(JSON.parse (ejerlejligheder))
+
+JSON.parse(parcelOgRækkehuse)
+console.log(JSON.parse (parcelOgRækkehuse))
+
+//Få værdierne af
 const submitButton = document.querySelector('#submit-btn');
 
 submitButton.addEventListener('click', function () {
