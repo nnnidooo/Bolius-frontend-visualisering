@@ -6,6 +6,9 @@
 
     <title>Title</title>
     <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+    <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
     <link rel="stylesheet" href="main.css">
 
 </head>
@@ -15,14 +18,15 @@
     <img src="boliuslogo.png" alt="logo" />
     <p>Videncentret <b> Bolius </b> </p>
     <a class="header-tags">Home</a>
-    <a class="header-tags">Love</a>
-    <a class="header-tags">You</a>
+    <a class="header-tags">Map</a>
+    <a class="header-tags">Idk</a>
 
 </header>
 
 </nav>
 
 <body>
+<div id='map'></div>
 <div id="text">
 <h1>Førstegangskøber?</h1>
 <h4> Beregn hvor i landet du har råd til dit ønskede kvadratmeter. Er du i tvivl om hvor i landet du kan købe dit antal ønskede kvadratmeter? Her kan du få hjælp til at udregne dette.
@@ -71,6 +75,6 @@
 <div id='map'></div>
 
 </body>
-
+<script type="text/javascript" src="danske-kommuner.js"></script>
 <script src="main.js"></script>
 </html>

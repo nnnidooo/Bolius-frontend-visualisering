@@ -18,7 +18,7 @@ submitButton.addEventListener('click', function () {
     console.log(answerSix.value);
 })
 
-/*
+
 const map = L.map('map').setView([56, 11.6], 6);
 
 const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -40,10 +40,8 @@ function onEachFeature(feature, layer) {
         }
     });
 }
-/*
 
-
-/* global statesData
+/* global statesData */
 L.geoJson(kommuneData, {
     style: function (feature) {
         return {
@@ -53,5 +51,3 @@ L.geoJson(kommuneData, {
     },
     onEachFeature: onEachFeature,
 }).addTo(map);
-
- */
