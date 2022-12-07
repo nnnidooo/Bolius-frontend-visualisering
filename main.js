@@ -27,39 +27,21 @@ submitButton.addEventListener('click', function () {
     console.log(answerSix.value);
 });
 
-/*
 
+//eventlistener til udregn butto
 
+const showMap = document.querySelector('#submit-btn')
+showMap.addEventListener('click', function () {
+    document.querySelector('#map').style.display = 'block';
 
-const map = L.map('map').setView([56, 11.6], 6);
+})
 
-const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-}).addTo(map);
+const blockFirstBox = document.querySelector(".quiz-container")[0].style.display = "block";
 
-// get color depending on population density value
-function getColor(labelEnglish) {
-    if(labelEnglish === "Varde") {
-        return '#800026'
-    }
+function next(id) {
+
+    document.querySelector('#text')[id - 1].style.display = "none";
+
+    document.querySelector('.quiz-container')[id].style.display = "block";
 }
 
-function onEachFeature(feature, layer) {
-    layer.on({
-        click: function(feature, a, b) {
-            console.log(feature.sourceTarget.feature.properties.label_dk)
-        }
-    });
-}
-
-/* global statesData */
-L.geoJson(kommuneData, {
-    style: function (feature) {
-        return {
-            weight: 1,
-            fillColor: getColor(feature.properties.label_en)
-        };
-    },
-    onEachFeature: onEachFeature,
-}).addTo(map);
