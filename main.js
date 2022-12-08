@@ -35,13 +35,18 @@ submitButton.addEventListener('click', function () {
     }
 });
 
-//eventlistener til udregn butto
+//eventlistener til udregn button
 
 const showMap = document.querySelector('#submit-btn')
 showMap.addEventListener('click', function () {
     document.querySelector('#map').style.display = 'block';
 
 });
+
+submitButton.addEventListener('click', function (){
+ document.querySelector('.quiz-container').style.display='none';
+ document.querySelector('#map').style.display='block';
+})
 
 
 const map = L.map('map').setView([56, 11.6], 6.5);
@@ -53,7 +58,7 @@ const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 // get color depending on population density value
 function getColor(label_dk) {
-    if(label_dk === filterFritidshuse) {
+    if(label_dk === label_dk) {
         return '#800026'
     }
 }
