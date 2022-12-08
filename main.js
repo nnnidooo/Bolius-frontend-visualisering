@@ -10,7 +10,7 @@ console.log(JSON.parse (parcelOgRækkehuse))
 
 
 
-//Få værdierne af
+//Få værdierne af input
 const submitButton = document.querySelector('#submit-btn');
 
 submitButton.addEventListener('click', function () {
@@ -27,7 +27,7 @@ submitButton.addEventListener('click', function () {
     const b = answerThree.value;
     const whatCanTheUserAfford = a/b;
     console.log(whatCanTheUserAfford)
-    const filterFritidshuse = fritidshuseAsArray.filter(fritidshuse => fritidshuse.Gennemsnit < answerOne.value);
+    const filterFritidshuse = fritidshuseAsArray.filter(fritidshuse => fritidshuse.Gennemsnit < whatCanTheUserAfford && fritidshuse.Gennemsnit > 0 );
     console.log(filterFritidshuse);
 
     if(filterFritidshuse === true) {
@@ -35,24 +35,47 @@ submitButton.addEventListener('click', function () {
     }
 });
 
-
-
-
-
-
-
-
-
-
-
-
 //eventlistener til udregn butto
 
 const showMap = document.querySelector('#submit-btn')
 showMap.addEventListener('click', function () {
     document.querySelector('#map').style.display = 'block';
 
-})
+});
 
+
+const map = L.map('map').setView([56, 11.6], 6.5);
+
+const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+
+// get color depending on population density value
+function getColor(label_dk) {
+    if(label_dk === filterFritidshuse) {
+        return '#800026'
+    }
+}
+
+function onEachFeature(feature, layer) {
+    layer.on({
+        click: function(feature, a, b) {
+            console.log(feature.sourceTarget.feature.properties.label_dk)
+        }
+    });
+}
+
+//global statesData
+L.geoJson(kommuneData, {
+    style: function (feature) {
+        return {
+            weight: 1,
+            fillColor: getColor(feature.properties.label_en)
+        };
+    },
+    onEachFeature: onEachFeature,
+
+}).addTo(map);
 
 

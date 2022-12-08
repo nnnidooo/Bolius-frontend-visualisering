@@ -1,4 +1,5 @@
-const map = L.map('map').setView([56, 11.6], 6);
+/*
+const map = L.map('map').setView([56, 11.6], 6.5);
 
 const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -7,7 +8,7 @@ const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 // get color depending on population density value
 function getColor(labelEnglish) {
-    if(labelEnglish === "Varde") {
+    if(labelEnglish === "Roskilde") {
         return '#800026'
     }
 }
@@ -20,7 +21,9 @@ function onEachFeature(feature, layer) {
     });
 }
 
-/* global statesData */
+ */
+
+/* global statesData
 L.geoJson(kommuneData, {
     style: function (feature) {
         return {
@@ -30,3 +33,5 @@ L.geoJson(kommuneData, {
     },
     onEachFeature: onEachFeature,
 }).addTo(map);
+
+ */
