@@ -59,14 +59,14 @@ const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // get color depending on population density value
 function getColor(label_dk) {
     if(label_dk === "Frederiksberg") {
-        return '#800026'
+        return '#06f60c'
     }
 
         else if(label_dk === "Gladsaxe"){
-            return '#800026'
+            return '#06f60c'
     }
     else if(label_dk === "Fredensborg"){
-        return '#800026'
+        return '#06f60c'
     }
     else if(label_dk === "Ringsted"){
         return '#800026'
