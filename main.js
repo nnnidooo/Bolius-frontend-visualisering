@@ -69,25 +69,25 @@ function getColor(label_dk) {
         return '#06f60c'
     }
     else if(label_dk === "Ringsted"){
-        return '#800026'
+        return '#06f60c'
     }
     else if(label_dk === "Odense"){
-        return '#800026'
+        return '#06f60c'
     }
     else if(label_dk === "Fredericia"){
-        return '#800026'
+        return '#06f60c'
     }
     else if(label_dk === "Vejen"){
-        return '#800026'
+        return '#06f60c'
     }
     else if(label_dk === "Favrskov"){
-        return '#800026'
+        return '#06f60c'
     }
     else if(label_dk === "Horsens"){
-        return '#800026'
+        return '#06f60c'
     }
     else if(label_dk === "Rebild"){
-        return '#800026'
+        return '#06f60c'
     }
 
 }
@@ -105,7 +105,9 @@ L.geoJson(kommuneData, {
     style: function (feature) {
         return {
             weight: 1,
-            fillColor: getColor(feature.properties.label_en)
+            fillColor: getColor(feature.properties.label_en),
+            color: '#696969',
+
         };
     },
     onEachFeature: onEachFeature,
