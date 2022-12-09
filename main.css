@@ -33,12 +33,9 @@ h1 {
 }
 
 h4 {
-
+    padding-bottom: 50px;
 }
 
-h3 {
-    font-family: arial;
-}
 header img{
     position: relative;
     float: left;
