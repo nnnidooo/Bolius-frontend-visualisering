@@ -125,4 +125,9 @@ p {
     margin: auto;
     width: 100%;
     padding: 10px;
+
+}
+
+#submit-btn {
+    cursor: pointer;
 }
