@@ -42,13 +42,13 @@ showMap.addEventListener('click', function () {
     document.querySelector('#map').style.display = 'block';
 
 });
-
+// display quiz box
 submitButton.addEventListener('click', function (){
  document.querySelector('.quiz-container').style.display='none';
  document.querySelector('#map').style.display='block';
 })
 
-
+// heatmat
 const map = L.map('map').setView([56, 11.6], 6.5);
 
 const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {

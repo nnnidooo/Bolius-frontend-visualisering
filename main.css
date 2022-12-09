@@ -117,3 +117,12 @@ p {
 #map {
     display: none;
 }
+
+#canvas {
+    height: 800px;
+    width: 800px;
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
