@@ -115,12 +115,13 @@ p {
 }
 
 #map {
-    display: none;
+    visibility: hidden;
+
 }
 
 #canvas {
     height: 800px;
-    width: 800px;
+    width: 100%;
     margin: auto;
     width: 100%;
     padding: 10px;

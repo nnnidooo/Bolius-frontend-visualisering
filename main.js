@@ -45,7 +45,7 @@ showMap.addEventListener('click', function () {
 // display quiz box
 submitButton.addEventListener('click', function (){
  document.querySelector('.quiz-container').style.display='none';
- document.querySelector('#map').style.display='block';
+ document.querySelector('#map').style.visibility='visible';
 })
 
 // heatmat
@@ -58,9 +58,14 @@ const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 // get color depending on population density value
 function getColor(label_dk) {
-    if(label_dk === label_dk) {
+    if(label_dk === "Hedensted") {
         return '#800026'
     }
+
+        else if(label_dk === "Roskilde"){
+            return '#800026'
+    }
+
 }
 
 function onEachFeature(feature, layer) {
