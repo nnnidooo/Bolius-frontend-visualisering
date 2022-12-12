@@ -17,10 +17,10 @@ header {
     font-family: Arial;
     color: #3E5959;
 }
-h1, h3 {
+h1, #under-text {
     max-width: 800px;
     margin:  auto;
-    padding: 20px;
+    padding: 30px;
     font-size: 1.4rem;
     line-height: 2.3rem;'
 }
@@ -30,13 +30,11 @@ h1 {
     font-family: "Arial Black";
 }
 
-h3 {
-    font-family: Arial;
-    padding: 70px;
-}
-h4 {
-    margin-bottom: 10px;
-
+#under-text {
+   font-family: Arial;
+   padding: 30px;
+   font-size: x-large;
+   margin-bottom: 50px;
 }
 
 header img{
@@ -60,7 +58,7 @@ header img{
 }
 
 .quiz-container {
-    box-shadow: 0 0 20px lightgrey;
+    box-shadow: 0 0 10px lightgrey;
     margin: auto;
     width: 600px;
     padding: 20px;
@@ -77,18 +75,19 @@ p {
 
 #submit-btn {
     color: black;
-    background-color: white;
     width: 100%;
     font-size: medium;
     padding: 10px;
     margin-top: 20px;
-    border-radius: 4px;
+    border-color: black;
     border-style: solid;
+    border-width: 1px;
+    background-color: #F2F5F5;
 }
 
 #text {
     background-color: white;
-    box-shadow: 0 0 20px lightgrey;
+    box-shadow: 0 0 7px lightgrey;
     max-width: 800px;
     margin: auto;
     padding: 70px;
