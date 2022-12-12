@@ -11,27 +11,38 @@
     <link rel="stylesheet" href="main.css">
 </head>
 
-<nav class="header-text">
-<header class="header">
-    <img src="boliuslogo.png" alt="logo" />
-    <p>Videncentret <b> Bolius </b> </p>
-    <a class="header-tags">Kontakt os</a>
-    <a class="header-tags">Om os</a>
-    <a class="header-tags">Home</a>
-</header>
-</nav>
+
 <body>
+<nav class="header-text">
+    <header class="header">
+        <img src="boliuslogo.png" alt="logo" />
+        <p>Videncentret <b> Bolius </b> </p>
+        <a class="header-tags">Kontakt os</a>
+        <a class="header-tags">Om</a>
+        <a class="header-tags">Bolig</a>
+    </header>
+</nav>
 
 <div id="text">
     <h1>Beregn hvor i landet du har råd til dit ønskede m<sup>2</sup></h1>
-    <h4>Er du førstegangskøber og er du i tvivl om hvor i landet du har råd til at bo. Det kan vi hjælpe dig med!
+    <h3>Er du førstegangskøber og er du i tvivl om hvor i landet du har råd til at bo. Det kan vi hjælpe dig med!
    Tryk <a href="https://www.nordea.dk/privat/produkter/boliglaan/beregn-hvor-meget-du-kan-koebe-bolig-for.html#/" target="_blank" rel="noopener noreferrer">her</a> og beregn dit maksimale lånebeløb.
-    </h4>
-</div>
-
+    </h3>
 
 <div class="quiz-container" id="quiz">
     <div class="quiz-header">
+
+    <div class="radioButton">
+
+        <h4>Besvar spørgsmålene herunder, og få et kort over de kommuner DU har råd til at bo i</h4>
+
+        <ul>
+        <p>Hvad er du interesseret i?</p>
+        <input type="radio" name="questionOne">Ejerlejelighed<br></label>
+        <input type="radio" name="questionOne">Fritidshus<br></label>
+        <input type="radio" name="questionOne">Parcel/Rækkehus<br></label>
+        </ul>
+    </div>
 
         <ul>
             <p>Hvor mange penge kan du købe bolig for</p>
@@ -60,6 +71,7 @@
 
 <div id='map'>
     <canvas id="canvas"></canvas>
+</div>
 </div>
 
 </body>

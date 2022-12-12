@@ -8,8 +8,6 @@ console.log(JSON.parse (ejerlejligheder))
 JSON.parse(parcelOgRækkehuse)
 console.log(JSON.parse (parcelOgRækkehuse))
 
-
-
 //Få værdierne af input
 const submitButton = document.querySelector('#submit-btn');
 
@@ -48,7 +46,7 @@ submitButton.addEventListener('click', function (){
  document.querySelector('#map').style.visibility='visible';
 })
 
-// heatmat
+//heatmat
 const map = L.map('map').setView([56, 11.6], 6.5);
 
 const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -106,8 +104,7 @@ L.geoJson(kommuneData, {
         return {
             weight: 1,
             fillColor: getColor(feature.properties.label_en),
-            color: '#696969',
-
+            color: '#696969'
         };
     },
     onEachFeature: onEachFeature,
