@@ -36,6 +36,7 @@ h3 {
 }
 h4 {
     margin-bottom: 10px;
+
 }
 
 header img{
@@ -142,11 +143,9 @@ p {
 }
 
 .radioButton {
-    'box-shadow: 0 0 20px lightgrey;'
-    margin: auto;
-    width: 600px;
-    padding: 20px;
-    align-items: end;
-    justify-content: flex-end;
-    font-family: arial;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    font-size: medium;
+    font-family: Arial;
 }
